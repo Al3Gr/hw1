@@ -1,0 +1,112 @@
+html {
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    background-color: rgb(38, 38, 38);
+}
+
+article {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 60%;
+    height: 650px;
+    background-color: white;
+    border-radius: 15px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+
+#logo_section {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo_section img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+form {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    justify-content: center;
+}
+
+.errore {
+    border-color: red;
+    
+}
+
+.errore::placeholder {
+    color:red;
+}
+
+input {
+    background-color: rgba(211, 211, 211, .4);
+    width: 100%;
+    height: 46px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px  rgb(38, 38, 38) solid;
+    padding: 5px 5px 5px 10px;
+    font-size: 1.1em;
+}
+
+input:hover {
+    background-color: white;
+}
+
+input:focus {
+    background-color: white;
+    outline: none;
+}
+
+
+.row {
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#login_button {
+    background-color:rgb(38, 38, 38);
+    border: 3px rgb(38, 38, 38) solid;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+#back_button {
+    color: rgb(38, 38, 38);
+    border: 3px rgb(38, 38, 38) solid;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 15px 5px 5px 5px;
+    width: 40%;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+

@@ -1,0 +1,595 @@
+html {
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    height: 100%;
+    margin: 0px;
+    position: relative;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 55%;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post {
+    width: 70%;
+    margin-bottom: 10px;
+    border: 1px rgb(38, 38, 38) solid;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.upper_section p {
+    color: lightgray;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.title h1 {
+    margin: 0px;
+    font-size: 1.8em;
+    letter-spacing: .4px;
+}
+
+.title p {
+    margin: 0px;
+    letter-spacing: .4px;
+    color:orangered;
+}
+
+.middle_section {
+    padding: 5px;
+}
+
+.lower_section {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.lower_section div {
+    display: flex;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(38, 38, 38);
+    padding: 9px;
+    border-radius: 30px;
+    margin-right: 10px;
+    border: 0px;
+    color: whitesmoke;
+}
+
+.edit:hover {
+    color:darkorchid;
+}
+
+.like:hover {
+    color:crimson;
+}
+
+.like_button_selected {
+    color: crimson;
+}
+
+
+.comment_button:hover {
+    color:dodgerblue;
+}
+
+.comment_button_selected {
+    color: dodgerblue;
+}
+
+.delete:hover {
+    color: greenyellow;
+}
+
+button p {
+    margin: 3px 0px 0px 3px;
+}
+
+
+header {
+    position: fixed;
+    top: 0px;
+    width: 99vw;
+    display: flex;
+    height: 50px;
+    background-color: rgb(38, 38, 38);
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#brand {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: whitesmoke;
+    width: 250px;
+}
+
+#brand img {
+    height: 50px;
+    width: 50px;
+    border: 1px rgb(38, 38, 38) solid;
+    border-radius: 15px;
+    margin-right: 8px;
+}
+
+#brand p {
+    margin-bottom: 0px;
+    margin-top: 4px;
+    font-size: 2em;
+    letter-spacing: .6px;
+}
+
+nav {
+    width: 250px;
+    display: flex;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 5px;
+    justify-content: space-around;
+    align-items: center;
+    height: 35px;
+}
+
+nav a {
+    width: 80px;
+    letter-spacing: .5px;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:link {
+    color: rgb(38, 38, 38);
+}
+
+nav a:visited {
+    color: rgb(38, 38, 38);
+}
+
+nav a:hover {
+    background-color: grey;
+    color: whitesmoke;
+}
+
+#selected {
+    background-color: rgb(38, 38, 38);
+    color: whitesmoke;
+    border-radius: 20px;
+}
+
+
+#profile {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 35px;
+}
+
+#profile div {
+    width: 35px;
+    height: 35px;
+    margin: 0px 5px;
+    background-color: crimson;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+#profile p {
+    margin: 0px 5px;
+    color: rgb(38, 38, 38);
+}
+
+
+#activity_container {
+    width: 250px;
+    position: fixed;
+    top: 100px;
+    border-right: 1px rgb(38, 38, 38) solid;
+    border-top: 1px rgb(38, 38, 38) solid;
+    border-bottom: 1px rgb(38, 38, 38) solid;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    align-items: center;
+}
+
+#info_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+}
+
+#info_section h1 {
+    font-size: 2.2em;
+    margin: 6px;
+}
+
+
+#weather_info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+}
+
+#weather_info img {
+    margin: 0px 15px 0px 0px;
+}
+
+#weather_info div {
+    display: flex;
+    flex-direction: column;
+}
+
+#weather_info h2 {
+    margin: 0px;
+}
+
+#weather_info p {
+    margin: 0px;
+    font-size: .9em;
+}
+
+hr {
+    border: .5px rgba(38, 38, 38, .2) solid;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#activity_section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#activity_section h4 {
+    margin: 0px;
+    letter-spacing: .3px;
+}
+
+
+/* #activity_section ul {
+    margin-top: 8px;
+    padding-left: 24px;
+} */
+
+#activity_section span {
+    margin: 0px 2px 0px 0px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#activity_section p {
+    margin: 0px;;
+}
+
+
+#create_post_button {
+    position: fixed;
+    right: 50px;
+    bottom: 25px;
+    background-color: rgb(38, 38, 38);
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+#create_post_button p {
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: .8px;
+}
+
+#create_post_button span {
+    margin-right: 8px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(38, 38, 38, .5);
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post_form {
+    width: 40%;
+    height: 50%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+/* #add_post {
+    width: 40%;
+    height: 50%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+} */
+
+.post_form div {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title_post {
+    width: 90%;
+    height: 45px;
+    background-color: whitesmoke;
+    border: 1px rgb(38, 38, 38) solid;
+    border-radius: 20px;
+    padding: 7px;
+    font-weight: 600;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+
+
+.comment_post {
+    resize: none;
+    width: 90%;
+    height: 60%;
+    background-color: whitesmoke;
+    border: 1px rgb(38, 38, 38) solid;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    vertical-align:super;
+}
+
+.delete_post {
+    width: 30%;
+    border: 3px rgb(38, 38, 38) solid;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.publish_post {
+    width: 30%;
+    color: whitesmoke;
+    background-color: rgb(38, 38, 38);
+    border: 3px rgb(38, 38, 38) solid;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#profile_info {
+    position: fixed;
+    right: 2px;
+    top: 65px;
+    background-color: white;
+    width: 350px;
+    height: 200px;
+    padding: 8px;
+    border: 1px rgb(38, 38, 38) solid;
+    border-radius: 10px;
+}
+
+#profile_info div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#profile_info h1 {
+    background-color: crimson;
+    color: white;
+    border-radius: 50px;
+    padding: 5px;
+    width: 70px;
+    height: 70px;
+    margin: 0px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: .8px;
+}
+
+#profile_info h2 {
+    margin: 0px 0px 10px 0px;
+}
+
+#profile_info h3 {
+    margin: 0px 0px 10px 0px;
+}
+
+#profile_info a {
+    text-decoration: none;
+    padding: 3px;
+}
+
+#profile_info a:link {
+    color: red;
+}
+
+#profile_info a:visited {
+    color: red;
+}
+
+#profile_info a:hover {
+    color: whitesmoke;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.comments_section {
+    border-radius: 15px;
+    padding: 5px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.utility_comments_section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.insert_comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.insert_comment textarea {
+    width: 100%;
+    resize: none;
+    margin-right: 10px;
+    border-radius: 15px;
+    padding: 7px;
+    height: 60px;
+}
+
+.insert_comment div {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.utility_comments_section p {
+    color: lightgray;
+    margin: 1px;
+    font-size: .8em;
+}
+
+.single_comment {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px rgb(38, 38, 38) solid;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 5px 0px;
+    
+}
+
+.comment_profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.comment_profile span {
+    height: 30px;
+    width: 30px;
+    color: whitesmoke;
+    background-color: green;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.comment_profile p {
+    color: coral;
+    letter-spacing: .5px;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.comment_text {
+    letter-spacing: .2px;
+}
+
+.add_comment {
+    width: 25px;
+    height: 25px;
+}
+
+.add_comment:hover {
+    color: lightseagreen;
+}
+
+
+
+
+.hidden {
+    display: none;
+}
