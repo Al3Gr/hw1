@@ -29,6 +29,7 @@
         <link rel="stylesheet" href="./styles/login_style.css">
         <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
         <script src="./scripts/login_script.js" defer></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <article>
