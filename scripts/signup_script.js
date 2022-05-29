@@ -100,7 +100,7 @@ function resetInputField(event){
 
 function sendData(event){
     if(document.querySelector(".errore") !== null || nome.value.length == 0 || cognome.value.length == 0 || email.value.length == 0 || username.value.length == 0 || password.value.length == 0){
-        alert("Metti qualcosa bastardo")
+        alert("Metti qualcosa scansafatiche")
         event.preventDefault()
     } 
 }
